@@ -34,7 +34,7 @@ public class Person {
     }
 
     // TODO (Activity 3): add the "email" field and its getter here.
-    public void getEmail() {
+    public String getEmail() {
         return email;
     }
     public void setEmail() {
