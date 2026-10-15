@@ -17,6 +17,9 @@ public class Product {
         return id;
     }
 
+    // If we commented out this getName(), GET /products/{id} with id 1 also drop name from the response
+    // To make sure this won't happen, you have to use tools like Postman/Swagger-ui to verify responses
+
     public String getName() {
         return name;
     }
