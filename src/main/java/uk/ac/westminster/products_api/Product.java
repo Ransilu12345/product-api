@@ -1,9 +1,14 @@
 package uk.ac.westminster.products_api;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Product {
     private Long id;
     private String name;
     private double price;
+    private List<Product> products = new ArrayList<>();
+    private Long nextId = 1L;
 
     public Product() {}
 
@@ -27,4 +32,10 @@ public class Product {
     public double getPrice() {
         return price;
     }
+
+    public void setId(Long id) { this.id = id; }
+
+    public void setName(String name) { this.name = name; }
+
+    public void setPrice(double price) { this.price = price; }
 }
