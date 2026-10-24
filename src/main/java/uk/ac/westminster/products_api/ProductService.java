@@ -10,6 +10,12 @@ public class ProductService {
     private List<Product> products = new ArrayList<>();
     private Long nextId = 1L;
 
+    public ProductService(){
+        products.add(new PhysicalProduct(nextId++, "laptop", 123000.00, 23.5, "length"));
+
+        products.add(new DigitalProduct(nextId++, "Phone", 23450.00, "", 23.45));
+    }
+
     public List<Product> getAllProducts() {
         return products;
     }
